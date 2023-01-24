@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagedisp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/numbering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/imagedisp"
+            android:layout_alignTop="@id/imagedisp"
+            android:layout_alignRight="@id/imagedisp"
+            android:layout_alignBottom="@id/imagedisp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
